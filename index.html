@@ -17,18 +17,18 @@
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="container-fluid">
         <!--Contenedor Header de Descuento-->
-        <header class="headerOff">
-            <div>
-                <p>10% OFF efectivo/transferencia - 3 cuotas sin interés / Envíos gratis a partir de $5800</p>
-            </div>
-        </header>
+        <div class="headerOff">
+            <p>10% OFF efectivo/transferencia - 3 cuotas sin interés / Envíos gratis a partir de $5800</p>
+            </header>
+        </div>
         <!--Logo-->
         <div class="logo">
             <a href="index.html"><img src="paginas/multimedia/logosisters.jpg" alt="Sisters Logo"
                     title="Sisters Clothes"></a>
         </div>
+
         <!--Nav Bar-->
         <nav class="navegacion">
             <ul class="lista">
@@ -49,71 +49,75 @@
             <img alt="photo2" src="paginas/multimedia/photo2.jpg" />
             <img alt="photo3" src="paginas/multimedia/photo3.jpg" />
         </div>
-        <main>
-            <h2 class="tituloProductos"> Productos</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="paginas/multimedia/productos/camisa1.jpg" class="cardRopa">
+        <!--Productos MÁS-->
+        <h2 class="tituloProductos"> Productos más vendidos</h2>
+        <div class="container contenedorProductos">
+            <div class="row contenedorCards">
+                <div class="carrd col-md-4">
+                    <img src="paginas/multimedia/productos/camisa1.jpg" class=".img-fluid cardRopa">
                     <div class="cardText">
-                    <h4>Remera Negra</h4>
-                    <p>$1190</p>
+                        <h4>Camisa Blue</h4>
+                        <p>$2190</p>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="multimedia/productos/remeracali.jpg" class="cardRopa">
+                <div class="carrd col-md-4">
+                    <img src="paginas/multimedia/invierno/buzonegro.jpg" class=".img-fluid cardRopa">
                     <div class="cardText">
-                    <h4>Remera Cali</h4>
-                    <p>$1099</p>
+                        <h4>Buzo Negro</h4>
+                        <p>$2499</p>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="multimedia/productos/topnegro.jpg" class="cardRopa">
+                <div class="carrd col-md-4">
+                    <img src="paginas/multimedia/productos/topcordones.png" class=".img-fluid cardRopa">
                     <div class="cardText">
-                    <h4>Top Negro</h4>
-                    <p>$990</p>
+                        <h4>Top Cordones</h4>
+                        <p>$1290</p>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="multimedia/productos/topbeige.jpg" class="cardRopa">
+                <div class="carrd col-md-4">
+                    <img src="paginas/multimedia/productos/remeraparadise.jpg" class=".img-fluid cardRopa">
                     <div class="cardText">
-                    <h4>Top Beige</h4>
-                    <p>$990</p>
+                        <h4>Remera Paradise</h4>
+                        <p>$1990</p>
                     </div>
                 </div>
-                <div class="col">
-                        <img src="multimedia/productos/topblanco.jpg" class="cardRopa">
-                        <div class="cardText">
-                        <h4>Top Blanco</h4>
+                <div class="carrd col-md-4">
+                    <img src="paginas/multimedia/invierno/polleramarron.jpg" class=".img-fluid cardRopa">
+                    <div class="cardText">
+                        <h4>Pollera Marrón</h4>
                         <p>$1090</p>
-                        </div>
-                </div>
-                <div class="col">
-                    <img src="multimedia/productos/camisamarron.jpg" class="cardRopa">
-                    <div class="cardText">
-                    <h4>Camisa Marrón</h4>
-                    <p>$1090</p>
                     </div>
                 </div>
-
+                <div class="carrd col-md-4">
+                    <img src="paginas/multimedia/productos/camisa4.jpg" class=".img-fluid cardRopa">
+                    <div class="cardText">
+                        <h4>Camisa Gray</h4>
+                        <p>$2190</p>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
-    </main>
-    <!--Footer-->
-    <footer class="piePagina">
-        <p>¡Seguinos en nuestras redes!</p>
-        <ul>
-            <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    Instagram
-                </a>
-            </li>
-            <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218">
-                    <ion-icon name="logo-facebook"></ion-icon> Facebook
-                </a></li>
-        </ul>
-        <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
-    </footer>
+        <!--Footer-->
+        <footer>
+            <div class="container piePagina">
+                <div class="row">
+                    <div class="col -md-12">
+                        <p>¡Seguinos en nuestras redes!</p>
+                        <ul>
+                            <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218">
+                                    <ion-icon name="logo-facebook"></ion-icon> Facebook
+                                </a></li>
+                        </ul>
+                        <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

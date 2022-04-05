@@ -9,7 +9,10 @@
 img{
     width: 100%;
 }
-
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
 /*Estilo del Header de descuento*/
 .headerOff p{
     display: flex;
@@ -34,6 +37,7 @@ img{
     text-align: center;
     padding: 10px;
     font-size: 15px;
+    margin: 0px;
 }
 .lista li{
     padding: 0px 20px;
@@ -52,7 +56,7 @@ a{
 }
 a:hover{
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 ul {
     list-style-type: none;
@@ -62,7 +66,7 @@ ul {
 .intro{
     text-align: center;
     background-color:  #ddb892;
-    padding: 25px;
+    padding: 20px;
     margin: 0px;
 }
 
@@ -88,7 +92,6 @@ h1{
 .intro p{
     padding-top: 10px;
 }
-
 /*Estilo de Imagenes Intro*/
 .roww{
     display: grid; 
@@ -102,15 +105,15 @@ h1{
   .photo2 { grid-area: 1 / 2 / 2 / 3; }
   .photo3 { grid-area: 1 / 3 / 2 / 4; }
 
-/* Estilo de Productos de Inicio*/
-
-.col-4{
-    padding: 10px;
-
-
-}
 
 /*Estilo de Productos*/
+.contenedorProductos{
+    background-color: #cac6c1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+}
 .contenedorCards{
     display: flex;
     align-items: center;
@@ -118,11 +121,27 @@ h1{
     justify-content: space-around;
 }
 
+.carrd{
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.carrd{
+    max-width: 300px;
+}
+/*
+.card .cardRopa{
+    padding: 5px;
+    text-align: center;
+}
+*/
 .cardRopa{
-    margin: 20px;
-    padding: 20px;
     width: 250px;
     height: 290px;
+    border-radius: 2px;
 }
 .tituloProductos{
     margin: 20px;
@@ -130,9 +149,10 @@ h1{
     text-align: left;
 }
 
-.card .cardText{
+.carrd .cardText{
     text-align: center;
     font-style: normal;
+    padding: 5px;
 }
 
 
@@ -157,11 +177,9 @@ h1{
 }
 
 /*Transform*/
-.card:hover{
+.carrd:hover{
     transform: scale(1.1);
-    border: 1px solid #fff;
-    border-radius: 2px;
-    background-color: #ddb892;
+    background-color: #f0d6bb;
 }
 /*Estilo de Info sobre Pagos*/
 
@@ -178,10 +196,18 @@ h1{
 }
 
 /*Estilo de Medios de Pago*/
+.pagos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 100%;
+}
+
 .pago img{
     padding: 10px;
-    width: 200px;
-    height: 150px;
+    max-width: 200px;
+    max-height: 150px;
+    justify-content: left;
 }
 
 .pagoTexto{
@@ -193,25 +219,35 @@ h1{
 /* Estilo de Formulario*/
 .formulario{
     background-color: #ddb892;
+    padding: 10px;
+    max-width: 100%;
+
+}
+.formulario .formu{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(122, 122, 122);
+}
+.formu{
+    background-color: #cac6c1;
     font-weight: 500;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    max-width: 500px;
 }
 
 .formulario .contactanos{
     margin: 0px;
     padding: 20px;
-    border-color: #ccac91;
-    border-radius: 10px;
 }
-.contactanos legend{
-    font-weight: bold;
-    font-size: 20px;
+.contactanos{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
 }
-.form{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px;
-    width: 500px;
-}
+
 /* Transition de Botón*/
 .btn{
     margin: 5px;
@@ -219,6 +255,7 @@ h1{
     display: inline-block;
     background-color: #d39b6d;
     border-radius: 5px;
+    border-color: black;
     transition: 0.5s;
 }
 
@@ -234,6 +271,9 @@ input:focus{
 }
 
 /*Estilo del Footer*/
+.container{
+    max-width: 100%;
+}
 .piePagina{
     display: grid;
     flex-direction: column;
@@ -310,7 +350,7 @@ input:focus{
 /*RESPONSIVE*/
 
 @media screen and (max-width:320px){
-    .contenedor, .headerOff, .lista, .intro, .piePagina {
+    .container-fluid, .headerOff, .lista, .intro, .piePagina {
         display: block;
         justify-content: center;
         text-align: center;
@@ -327,28 +367,71 @@ input:focus{
         text-align: center;
     }
 }
+.pagos .pago{
+    display: inline-flex;
+}
+
+/*
+.container-fluid img{
+    width: 200px;
+}*/
+
 @media screen and (max-width:768px){
-    .contenedor, .headerOff, .logo .lista, .intro, .piePagina {
+    .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
         display: flex;
         justify-content: center;
         text-align: center;
 }
+.pagos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 100%;
+}
+
+.pago img{
+    padding: 10px;
+    max-width: 200px;
+    max-height: 150px;
+    justify-content: left;
 }
 .lista{
     display: flex;
-    padding: 10px;
-   font-size: 20px;
+    padding: 2px;
+   font-size: 15px;
    text-align: center;
-
+}
+.intro{
+    padding: 5px;
+    font-size: 10px;
 }
 .intro, h1, p {
     text-align: center;
+    margin-bottom: 1px ;
+}
+.headerOff{
+    font-size: 10px;
+}
+
+.info{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
 }
 @media screen and (max-width:1200px){
-    .contenedor, .headerOff, .logo .lista,  .intro, .piePagina {
+    .container-fluid, .headerOff, .logo .lista,  .intro, .piePagina {
         display: block;
         justify-content: center;
         text-align: center;
     }
-    
+    /*
+.pagos .pago img{
+    display: inline-flex;
+    justify-content: left;
+}*/
+.pagos img{
+    max-width: 200px;
+}
+
 }

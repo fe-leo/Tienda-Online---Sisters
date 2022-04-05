@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Sisters Clothes | Contacto</title>
-        <link rel="stylesheet" href="../estilos/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-        <div class="contenedor">
-<!--Contenedor Header de Descuento-->
-            <header class="headerOff"> 
-                <div>
-                    <p>10% OFF efectivo/transferencia - 3 cuotas sin interés / Envíos gratis a partir de $5800</p>
-                </div>
-            </header>
-<!--Logo-->
-            <div class="logo">
-                <a href="../index.html"><img src="../paginas/multimedia/logosisters.jpg" alt="Sisters Logo" title="Sisters Clothes"></a>
-             </div>
-<!--Nav Bar-->
-             <nav class="navbar">
-                <ul class="lista">
-                    <li><a href="../paginas/productos.html">Productos</a></li>
-                    <li><a href="../paginas/newin.html">New In</a></li>
-                    <li><a href="../paginas/info.html">Info</a></li>
-                    <li><a href="../paginas/contactanos.html">Contacto</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Sisters Clothes | Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Contenedor Header de Descuento-->
+        <header class="headerOff">
             <div>
-                <form class="formulario">
-                    <div class="form">
-                    <fieldset class="contactanos">
-                        <legend>Contactanos</legend>
-                    <label for="nombre y Apellido">Nombre y Apellido:</label>
-                    <input id="nombre y Apellido" type="text">
-                    <br><br>
-                    <label for="email">Email:</label>
-                    <input id="email" type="text">
-                    <br><br>
-                    <label for="telefono">Teléfono(Opcional)</label>
-                    <input id="telefono" type="text">
-                    <br><br>
-                    <label for="mensaje">Mensaje(Opcional)</label>
-                    <br><br>
-                    <textarea name="mensaje"></textarea>
-                    <br><br>
-                    <input class="btn" type="submit" value="Enviar">
-                    </fieldset>
-                    </div>
-                </form>
+                <p>10% OFF efectivo/transferencia - 3 cuotas sin interés / Envíos gratis a partir de $5800</p>
             </div>
+        </header>
+        <!--Logo-->
+        <div class="logo">
+            <a href="../index.html"><img src="../paginas/multimedia/logosisters.jpg" alt="Sisters Logo"
+                    title="Sisters Clothes"></a>
         </div>
-<!--Footer-->
-<footer class="piePagina">
-    <p>¡Seguinos en nuestras redes!</p>
-    <ul>
-        <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok"><ion-icon name="logo-instagram"></ion-icon>
-            Instagram</a>
-        </li>
-        <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218"><ion-icon name="logo-facebook"></ion-icon> Facebook</a></li>
-    </ul>
-    <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
-</footer>
-</div>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!--Nav Bar-->
+        <nav class="navegacion">
+            <ul class="lista">
+                <li><a href="../paginas/productos.html">Productos</a></li>
+                <li><a href="../paginas/newin.html">New In</a></li>
+                <li><a href="../paginas/info.html">Info</a></li>
+                <li><a href="../paginas/contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="formulario">
+            <h2 class="contactanos">Contactanos</h2>
+            <form class="formu">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="col-md-6">
+                    <label for="emailinfo" class="form-label">Email</label>
+                    <input type="email" class="form-control" if="emailinfo">
+                </div>
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Teléfono(Opcional)</label>
+                    <input type="text" class="form-control" id="phoneNumber">
+                </div>
+                <div class="col-md-12">
+                    <label for="mensaje>" class="form-label">Mensaje (Opcional)</label>
+                    <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
+                </div>
+                <div class="col-md-12">
+                <input class="btn" type="submit" value="Enviar">
+                </div>
+            </div>
+            </form>
+            </div>
+    <!--Footer-->
+    <footer class="piePagina">
+        <p>¡Seguinos en nuestras redes!</p>
+        <ul>
+            <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    Instagram
+                </a>
+            </li>
+            <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218">
+                    <ion-icon name="logo-facebook"></ion-icon> Facebook
+                </a></li>
+        </ul>
+        <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

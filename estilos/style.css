@@ -5,15 +5,23 @@
     padding: 0;
     font-size: 62,5%;
 }
-
+.col-md-12{
+   margin: 0px;
+   padding: 0px;
+}
 img{
     width: 100%;
+}
+.container{
+    max-width: 100%;
+    margin:0px;
+    padding: 0px;
 }
 .container-fluid{
     margin: 0px;
     padding: 0px;
 }
-/*Estilo del Header de descuento*/
+/*ESTILO DEL HEADER DE DESCUENTO*/
 .headerOff p{
     display: flex;
     background-color: #b08968;
@@ -21,13 +29,13 @@ img{
     padding: 10px;
     margin: 0px;
 } 
-/*Estilo del Logo*/
+/*ESTILO DEL LOGO*/
 .logo img{
     display: flex;
     justify-content: center;
     text-align: center;
 }
-/*Estilo del Nav Bar*/
+/*ESTILO DEL NAV BAR*/
 .lista{
     display: flex;
     flex-direction: row;
@@ -36,47 +44,69 @@ img{
     padding: 10px;
     text-align: center;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
     margin: 0px;
 }
-.lista li{
-    padding: 0px 20px;
-    text-decoration: none;
+.navegacion{
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
-
+.navbar .lista{
+    background-color: #b08968;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+.lista li{
+    padding: 0px;
+    text-decoration: none;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+}
+.navegacion .navbar{
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 .navegacion li:hover{
-    background-color: #fff;
+    background-color: #ddb892;
     padding: 0px 15px;
     border-radius: 2px;
     margin: 0px;
+    
+}
+.navbar-brand{
+    margin: 0px;
+    padding: 0px;
+
 }
 a{
     text-decoration: none;
-    color: black
+    color: black;
+
 }
 a:hover{
     text-decoration: none;
     color: #000000;
 }
-ul {
+ul, li {
     list-style-type: none;
 }
 
-/*Estilo de Texto Intro*/
+/*ESTILO DEL TEXTO DE INTRO + ANIMACIÓN*/
 .intro{
     text-align: center;
     background-color:  #ddb892;
     padding: 20px;
     margin: 0px;
 }
-
 h1{
     font-family: serif;
     font-weight:700;
     animation-duration: 3s;
     animation-name: anima;
 }
-
 @keyframes anima{
     0%{
         opacity: 0%;
@@ -88,11 +118,10 @@ h1{
         opacity: 100%;
     }
 }
-
 .intro p{
     padding-top: 10px;
 }
-/*Estilo de Imagenes Intro*/
+/*ESTILO DE IMAGENES INTRO*/
 .roww{
     display: grid; 
     grid-auto-flow: column; 
@@ -105,84 +134,80 @@ h1{
   .photo2 { grid-area: 1 / 2 / 2 / 3; }
   .photo3 { grid-area: 1 / 3 / 2 / 4; }
 
-
-/*Estilo de Productos*/
-.contenedorProductos{
-    background-color: #cac6c1;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+/*ESTILO DE IMAGENES DE LOS PRODUCTOS*/
+.contenedorPrendas{
+    background-color: hsl(33, 8%, 77%);
     max-width: 100%;
-}
-.contenedorCards{
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.carrd{
-    border-style: none;
-    padding: 10px;
-    margin: 10px;
-    justify-content: center;
-    border-radius: 2px;
-}
-
-.carrd{
-    max-width: 300px;
-}
-/*
-.card .cardRopa{
-    padding: 5px;
+    padding: 20px 20px;
     text-align: center;
 }
-*/
-.cardRopa{
-    width: 250px;
-    height: 290px;
+.prendas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+}
+.prendaImg{
+    max-width: 300px;
+    max-height: 330px;
     border-radius: 2px;
 }
+.prendas .prendaTexto{
+    text-align: center;
+    background-color: #ddba9e;
+    max-width: 300px;
+}
+.titlePrenda,p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
 .tituloProductos{
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
 }
 
-.carrd .cardText{
-    text-align: center;
-    font-style: normal;
-    padding: 5px;
+/*ANIMACIÓN HOVER DE LAS IMAGENES*/
+.prendaTexto:hover{
+    transform: scale(1.1);
 }
 
-
-.tituloNew{
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-/*Page Navigation*/
-.pagination{
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-}
-.pagination .page-item{
-    padding: 15px;
-}
-.page-item:hover{
-    background-color: #ac764a;
-    border-radius: 2px;
-}
-
-/*Transform*/
-.carrd:hover{
+/*ANIMACIÓN TRANSFORM DE IMAGENES*/
+.carr:hover{
     transform: scale(1.1);
     background-color: #f0d6bb;
 }
-/*Estilo de Info sobre Pagos*/
+/*ESTILO DE TITULO DE PÁG "NEWIN"*/
+.tituloNew{
+    text-align: center;
+    padding: 15px;
+}
+.row{
+    padding: 0px;
+    margin: 0px;
+}
+/*ESTILO DE PAGE NAVIGATION Y HOVER*/
+.navpage .pagination{
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #cac6c1;
+}
+.page-item{
+    padding: 5px;
+}
+.pagination .page-item{
+    padding: 10px;
+}
+.page-item:hover{
+    background-color: #d6b090;
+    border-radius: 2px;
+}
 
+/*ESTILO DE SECCIÓN INFO*/
 .info .envio{
     font-weight: 700;
     text-align: left;
@@ -195,28 +220,26 @@ h1{
     margin-bottom: 10px;
 }
 
-/*Estilo de Medios de Pago*/
+/*ESILOS DE SECCIÓN PAGO*/
 .pagos{
     display: flex;
     flex-direction: row;
     justify-content: left;
     max-width: 100%;
 }
-
 .pago img{
     padding: 10px;
     max-width: 200px;
     max-height: 150px;
     justify-content: left;
 }
-
 .pagoTexto{
     text-align: left;
     font-weight: bolder;
     padding: 20px;
 }
 
-/* Estilo de Formulario*/
+/*ESTILO DE FORMULARIO*/
 .formulario{
     background-color: #ddb892;
     padding: 10px;
@@ -248,7 +271,7 @@ h1{
     text-align: center;
 }
 
-/* Transition de Botón*/
+/*ESTILO Y TRANSICIÓN DE BOTÓN*/
 .btn{
     margin: 5px;
     padding: 5px;
@@ -258,11 +281,11 @@ h1{
     border-color: black;
     transition: 0.5s;
 }
-
 .btn:hover{
     background: #ac764a;
 }
-/*Transition de Input*/
+
+/*TRANSICIÓN DE INPUT*/
 input:focus{
     width: 150px;
     height: 30px;
@@ -270,10 +293,7 @@ input:focus{
     transition: all 1s;
 }
 
-/*Estilo del Footer*/
-.container{
-    max-width: 100%;
-}
+/*ESTILO DEL FOOTER Y HOVER*/
 .piePagina{
     display: grid;
     flex-direction: column;
@@ -290,11 +310,9 @@ input:focus{
     display: inline;
     text-align: center;
 }
-
 .socialMedia{
     padding: 10px;
 }
-
 .piePagina .copyright{
     font-weight: lighter;
     color: #fff;
@@ -306,7 +324,6 @@ input:focus{
     padding: 5px;
     text-decoration: none;
 }
-
 
 /*GRID DE HTML*/
 .contenedor{
@@ -322,7 +339,6 @@ input:focus{
     "small-container" "small-container" "small-container"
     "piePagina" "piePagina" "piePagina"
 }
-
 
 .headerOff{
     grid-area: headerOff;
@@ -355,27 +371,34 @@ input:focus{
         justify-content: center;
         text-align: center;
 
-    }
-.lista{
+}
+.navbar{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    }
+    font-size: 16px;
+}
+
+.navbar .lista{
+    flex-direction: column;
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
 .intro, h1, p {
         text-align: center;
+        margin-bottom: 0px;
     }
 }
 .pagos .pago{
     display: inline-flex;
 }
-
-/*
-.container-fluid img{
-    width: 200px;
-}*/
-
 @media screen and (max-width:768px){
     .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
         display: flex;
@@ -388,7 +411,6 @@ input:focus{
     justify-content: left;
     max-width: 100%;
 }
-
 .pago img{
     padding: 10px;
     max-width: 200px;
@@ -398,7 +420,7 @@ input:focus{
 .lista{
     display: flex;
     padding: 2px;
-   font-size: 15px;
+   font-size: 20px;
    text-align: center;
 }
 .intro{
@@ -425,13 +447,11 @@ input:focus{
         justify-content: center;
         text-align: center;
     }
-    /*
-.pagos .pago img{
-    display: inline-flex;
-    justify-content: left;
-}*/
+
 .pagos img{
     max-width: 200px;
 }
-
+.lista{
+    font-size: 20px;
+}
 }

@@ -58,7 +58,8 @@ img{
     margin-top: 0px;
     
 }
-.lista li{
+.listas li{
+    justify-content: center;
     padding: 0px;
     text-decoration: none;
     margin-bottom: 0px;
@@ -93,7 +94,6 @@ a:hover{
 ul, li {
     list-style-type: none;
 }
-
 /*ESTILO DEL TEXTO DE INTRO + ANIMACIÓN*/
 .intro{
     text-align: center;
@@ -372,25 +372,11 @@ input:focus{
         text-align: center;
 
 }
-.navbar{
+.navbar .navbar-brand .listas{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    font-size: 16px;
 }
 
-.navbar .lista{
-    flex-direction: column;
-}
-.navegacion{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-.navbar{
-    display: flex;
-    flex-direction: column;
-}
 .intro, h1, p {
         text-align: center;
         margin-bottom: 0px;
@@ -441,7 +427,7 @@ input:focus{
 }
 
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1024px){
     .container-fluid, .headerOff, .logo .lista,  .intro, .piePagina {
         display: block;
         justify-content: center;
@@ -454,4 +440,28 @@ input:focus{
 .lista{
     font-size: 20px;
 }
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#b08968;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px;
+}
+}
+@media screen and (min-width:1024px){
+    .listas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color:#b08968;
+        padding: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        margin: 0px;
+    }
 }

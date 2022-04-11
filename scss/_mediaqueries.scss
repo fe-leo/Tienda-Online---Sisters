@@ -1,0 +1,99 @@
+@media screen and (max-width:320px){
+    .container-fluid, .headerOff, .lista, .intro, .piePagina {
+        display: block;
+        justify-content: center;
+        text-align: center;
+
+}
+.navbar .navbar-brand .listas{
+    display: flex;
+    flex-direction: column;
+}
+.intro, h1, p {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+}
+.pagos .pago{
+    display: inline-flex;
+}
+@media screen and (max-width:768px){
+    .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}
+.pagos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 100%;
+}
+.pago img{
+    padding: 10px;
+    max-width: 200px;
+    max-height: 150px;
+    justify-content: left;
+}
+.lista{
+    display: flex;
+    padding: 2px;
+   font-size: 20px;
+   text-align: center;
+}
+.intro{
+    padding: 5px;
+    font-size: 10px;
+}
+.intro, h1, p {
+    text-align: center;
+    margin-bottom: 1px ;
+}
+.headerOff{
+    font-size: 10px;
+}
+
+.info{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+}
+@media screen and (max-width:1024px){
+    .container-fluid, .headerOff, .logo .lista,  .intro, .piePagina {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+.pagos img{
+    max-width: 200px;
+}
+.lista{
+    font-size: 20px;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#b08968;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px;
+}
+}
+@media screen and (min-width:1024px){
+    .listas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color:#b08968;
+        padding: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        margin: 0px;
+    }
+}

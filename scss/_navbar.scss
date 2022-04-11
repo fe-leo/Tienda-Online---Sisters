@@ -1,0 +1,65 @@
+/*ESTILO DEL NAV BAR*/
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $colorSecundario;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px;
+}
+.navegacion{
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    .navbar{
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    li{
+    &:hover{
+    background-color: $colorPrincipal;
+    padding: 0px 15px;
+    border-radius: 2px;
+    margin: 0px;
+        }
+    }
+}
+.navbar .listas{
+    background-color: $colorSecundario;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    .lista{
+    display: flex;
+    justify-content: center;
+    background-color: $colorSecundario;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px;
+}
+}
+.lista li{
+    padding: 0px;
+    text-decoration: none;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+}
+.navbar-brand{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: #000000;
+}
+}
+ul, li {
+    list-style-type: none;
+}

@@ -1,0 +1,31 @@
+/*ESTILO DEL FOOTER Y HOVER*/
+.piePagina{
+    /*display: grid;
+    flex-direction: column;*/
+    background-color: $colorSecundario;
+    text-align: center;
+    p{
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 10px;
+    li{
+    display: inline;
+    text-align: center;
+}
+}
+}
+.copyright{
+    font-weight: lighter;
+    color: #fff;
+    }
+.socialMedia{
+    padding: 10px;
+    a{
+         &:hover{
+             background-color: #fff;
+             border-radius: 2px;
+             padding: 5px;
+             text-decoration: none;   
+        }
+    }
+}

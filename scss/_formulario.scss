@@ -1,0 +1,42 @@
+/*ESTILO DE FORMULARIO*/
+.formulario{
+    background-color: $colorPrincipal;
+    padding: 10px;
+    max-width: 100%;
+.formu{
+        border: 1px;
+    border-style: solid;
+    border-color: rgb(122, 122, 122);
+    }
+}
+.formu{
+    background-color: $colorAlternativo;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    max-width: 500px;
+}
+.formulario{
+    margin: 0px;
+    padding: 20px;
+.contactanos{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    }
+}
+/*ESTILO Y TRANSICIÓN DE BOTÓN*/
+.btn{
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    background-color: #d39b6d;
+    border-radius: 5px;
+    border-color: black;
+    transition: 0.5s;
+    &:hover{
+        background-color: #ac764a;
+    }
+}

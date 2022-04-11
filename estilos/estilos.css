@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*COLORES*/
+* {
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 62,5%; }
+
+.col-md-12 {
+  margin: 0px;
+  padding: 0px; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px; }
+
+/*ESTILO DEL HEADER DE DESCUENTO*/
+.headerOff p {
+  display: flex;
+  background-color: #b08968;
+  justify-content: center;
+  padding: 10px;
+  margin: 0px; }
+
+/*ESTILO DEL LOGO*/
+.logo img {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+/*ESTILO DEL NAV BAR*/
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #b08968;
+  padding: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0px; }
+
+.navegacion {
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+  .navegacion .navbar {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px; }
+  .navegacion li:hover {
+    background-color: #ddb892;
+    padding: 0px 15px;
+    border-radius: 2px;
+    margin: 0px; }
+
+.navbar .listas {
+  background-color: #b08968;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+  .navbar .listas .lista {
+    display: flex;
+    justify-content: center;
+    background-color: #b08968;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px; }
+
+.lista li {
+  padding: 0px;
+  text-decoration: none;
+  margin-bottom: 0px;
+  padding: 0px 20px; }
+
+.navbar-brand {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    color: #000000; }
+
+ul, li {
+  list-style-type: none; }
+
+/*ESTILO DE FORMULARIO*/
+.formulario {
+  background-color: #ddb892;
+  padding: 10px;
+  max-width: 100%; }
+  .formulario .formu {
+    border: 1px;
+    border-style: solid;
+    border-color: #7a7a7a; }
+
+.formu {
+  background-color: #cac6c1;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  max-width: 500px; }
+
+.formulario {
+  margin: 0px;
+  padding: 20px; }
+  .formulario .contactanos {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center; }
+
+/*ESTILO Y TRANSICIÓN DE BOTÓN*/
+.btn {
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+  background-color: #d39b6d;
+  border-radius: 5px;
+  border-color: black;
+  transition: 0.5s; }
+  .btn:hover {
+    background-color: #ac764a; }
+
+/*ESTILO DEL FOOTER Y HOVER*/
+.piePagina {
+  /*display: grid;
+    flex-direction: column;*/
+  background-color: #b08968;
+  text-align: center; }
+  .piePagina p {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 10px; }
+    .piePagina p li {
+      display: inline;
+      text-align: center; }
+
+.copyright {
+  font-weight: lighter;
+  color: #fff; }
+
+.socialMedia {
+  padding: 10px; }
+  .socialMedia a:hover {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 5px;
+    text-decoration: none; }
+
+@media screen and (max-width: 320px) {
+  .container-fluid, .headerOff, .lista, .intro, .piePagina {
+    display: block;
+    justify-content: center;
+    text-align: center; }
+  .navbar .navbar-brand .listas {
+    display: flex;
+    flex-direction: column; }
+  .intro, h1, p {
+    text-align: center;
+    margin-bottom: 0px; } }
+
+.pagos .pago {
+  display: inline-flex; }
+
+@media screen and (max-width: 768px) {
+  .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .pagos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 100%; }
+  .pago img {
+    padding: 10px;
+    max-width: 200px;
+    max-height: 150px;
+    justify-content: left; }
+  .lista {
+    display: flex;
+    padding: 2px;
+    font-size: 20px;
+    text-align: center; }
+  .intro {
+    padding: 5px;
+    font-size: 10px; }
+  .intro, h1, p {
+    text-align: center;
+    margin-bottom: 1px; }
+  .headerOff {
+    font-size: 10px; }
+  .info {
+    font-size: 10px;
+    margin-bottom: 5px; } }
+
+@media screen and (max-width: 1024px) {
+  .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
+    display: block;
+    justify-content: center;
+    text-align: center; }
+  .pagos img {
+    max-width: 200px; }
+  .lista {
+    font-size: 20px; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b08968;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px; } }
+
+@media screen and (min-width: 1024px) {
+  .listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b08968;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px; } }

@@ -2,3 +2,47 @@
 $colorPrincipal: #ddb892;
 $colorSecundario: #b08968;
 $colorAlternativo: #cac6c1;
+
+/*MAP - GET IT*/
+$estiloheader:(
+    flex: flex,
+    colorfondo: #b08968,
+    centro: center,
+    10px: 10px,
+    0px: 0px,
+);
+.headerOff p{
+    display: map-get($estiloheader, flex);
+    background-color: map-get($estiloheader, colorfondo);
+    justify-content: map-get($estiloheader, centro);
+    padding: map-get($estiloheader, 10px);
+    margin: map-get($estiloheader, 0px);
+}
+/*MIXIN SIN PARÁMETRO DEL LOGO*/
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.logo img{
+    @include flex;
+}
+
+/*EXTEND CON BOTONES*/
+.boton1 {
+    margin-top: 10px;
+    padding: 10px;
+    width: 380px;
+    justify-content: left;
+    background-color: #d39b6d;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.1s;
+    &:hover{
+        background: #ac764a;
+    }
+}
+.boton2{
+    @extend .boton1;
+    width: 160px;
+}

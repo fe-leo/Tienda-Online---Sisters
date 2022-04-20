@@ -1,0 +1,46 @@
+/*ESTILO DE IMAGENES DE LOS PRODUCTOS*/
+.contenedorPrendas{
+    background-color: hsl(33, 8%, 77%);
+    max-width: 100%;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: center;
+}
+.prendas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+}
+.prendaImg{
+    max-width: 300px;
+    max-height: 330px;
+    border-radius: 2px;
+}
+.prendas .prendaTexto{
+    text-align: center;
+    background-color: #ddba9e;
+    max-width: 300px;
+}
+.titlePrenda,p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.tituloProductos{
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+/*ANIMACIÓN HOVER DE LAS IMAGENES*/
+.prendaTexto:hover{
+    transform: scale(1.1);
+}
+
+/*ANIMACIÓN TRANSFORM DE IMAGENES*/
+.carr:hover{
+    transform: scale(1.1);
+    background-color: #f0d6bb;
+}

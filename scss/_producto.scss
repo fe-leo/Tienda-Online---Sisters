@@ -1,0 +1,58 @@
+.cajadePrenda{
+    max-width: 100%;
+    padding:10px;
+    background-color: white;
+}
+.prendaImg2{
+    max-width: 450px;
+    max-height: 520px;
+}
+.carddd{
+    padding-left: auto;
+    padding-right:auto;
+}
+
+.cardTextito{
+    text-align: left;
+    font-size: 16px;
+}
+.inputCart{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 380px;
+    margin-bottom: 15px;
+    border-style: none;
+}
+.boton1{
+    width: 380px;
+}
+.cajaCarrito p{
+    text-align: left;
+}
+.img-thumbnail{
+    display: flex;
+    justify-content: left;
+    border-style: none;
+    width: 100px;
+    height: 100px;
+}
+/*ESTILO DE PRODUCTO*/
+.card-title{
+    font-weight: normal;
+    font-family: 'Inconsolata', monospace;
+}
+.precio{
+    font-weight: bold;
+    text-align: left;
+}
+.formaPago{
+    padding: 5px;
+    text-align:left;
+    font-weight:500;
+}
+.cantidadText{
+    display: flex;
+    font-size: 12px;
+    justify-content: left;
+}

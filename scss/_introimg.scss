@@ -1,0 +1,43 @@
+/*ESTILO DEL TEXTO DE INTRO + ANIMACIÓN*/
+.intro{
+  text-align: center;
+  background-color:  #ddb892;
+  padding: 20px;
+  margin: 0px;
+}
+
+.tituloPrin{
+  font-family: serif;
+  font-size:30px;
+  animation-duration: 3s;
+  animation-name: anima;
+}
+@keyframes anima{
+  0%{
+      opacity: 0%;
+  }
+  50%{
+      opacity: 50%;
+  }
+  100%{
+      opacity: 100%;
+  }
+}
+.intro .subtituloP{
+  padding-top: 5px;
+  font-size: 16px;
+}
+/*ESTILO DE IMAGENES INTRO*/
+.roww{
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px 0px;
+    padding: 20px 50px;
+    margin: 0px;
+  }
+  .photo1 { grid-area: 1 / 1 / 2 / 2; }
+  .photo2 { grid-area: 1 / 2 / 2 / 3; }
+  .photo3 { grid-area: 1 / 3 / 2 / 4; }
+

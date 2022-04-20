@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Sisters Clothes | Producto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Contenedor Header de Descuento-->
+        <header class="headerOff">
+            <div>
+                <p>10% OFF efectivo/transferencia - 3 cuotas sin interés / Envíos gratis a partir de $5800</p>
+            </div>
+        </header>
+    <!--IMAGEN DEL LOGO-->
+    <div class="logo">
+        <a href="../index.html"><img src="../paginas/multimedia/logosisters.jpg" alt="Sisters Logo"
+                title="Sisters Clothes"></a>
+    </div>
+    <!--NAV BAR-->
+    <div class="navegacion sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="lista container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="listas collapse navbar-collapse" id="navbarNavDropdown">
+                    <li><a class="navbar-brand" href="../paginas/productos.html">Productos</a></li>
+                    <li><a class="navbar-brand" href="../paginas/newin.html">New In</a></li>
+                    <li><a class="navbar-brand" href="../paginas/info.html">Info</a></li>
+                    <li><a class="navbar-brand" href="../paginas/contactanos.html">Contacto</a></li>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div class="cajadePrenda container-fluid">
+        <div class="carddd card mb-3">
+            <div class="row">
+                <div class="coluimg col-md-6 col-sm-12">
+                    <img src="multimedia/productos/camisamarron.jpg" class="prendaImg2 img-fluid rounded-start"
+                        alt="camisamarron">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card-body">
+                        <h1 class="card-title">Nombre de la prenda</h1>
+                        <p class="h4 precio">$2.300,00</p>
+                        <p class="cardTextito card-text"> 10% de descuento pagando por transferencia bancaria ó efectivo
+                        </p>
+                        <p class="card-text"></p>
+                        <ul class="formaPago">
+                            <li><a href="">Ver formas de pago</a>
+                            </li>
+                        </ul>
+                        <fieldset class="cajaF">
+                            <legend class="cantidadText">Cantidad</legend>
+                            <select class="inputCart form-select" aria-label="Default select example">
+                                <option selected>Elegir cantidad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button class="boton1" type="submit" value="AGREGAR AL CARRITO" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">AGREGAR AL CARRITO
+                            </button>
+                        </fieldset>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Mi Carrito</h5>
+                                <input type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                            </div>
+                            <div class="cajaCarrito offcanvas-body">
+                                <img src="multimedia/productos/camisamarron.jpg" class="img-thumbnail"
+                                    alt="Camisa Marrón">
+                                <p>Camisa Marrón</p>
+                                <p>Subtotal</p>
+                                <p>Agregar cupón de descuento</p>
+                                <p>Total</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+<!--Footer-->
+<footer class="piePagina">
+    <p>¡Seguinos en nuestras redes!</p>
+    <ul>
+        <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok">
+                <ion-icon name="logo-instagram"></ion-icon>
+                Instagram
+            </a>
+        </li>
+        <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218">
+                <ion-icon name="logo-facebook"></ion-icon> Facebook
+            </a></li>
+    </ul>
+    <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
+</footer>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

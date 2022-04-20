@@ -154,16 +154,16 @@ ul, li {
     text-align: center; }
 
 /*ESTILO Y TRANSICIÓN DE BOTÓN*/
-.boton2 {
+.cajaboton .boton2 {
   margin-top: 10px;
   padding: 10px;
   width: 160px;
   justify-content: left;
-  background-color: #d39b6d;
+  background-color: #24160c;
   border-radius: 5px;
   border-style: none;
   transition: 0.1s; }
-  .boton2:hover {
+  .cajaboton .boton2:hover {
     background-color: #ac764a; }
 
 /*ESTILO DEL FOOTER Y HOVER*/
@@ -219,8 +219,14 @@ ul, li {
   max-width: 250px;
   max-height: 40px; }
 
+.cajaboton .boton2 {
+  width: 100%;
+  background-color: #d39b6d; }
+
 .cajaF .inputCart {
-  width: 100%; }
+  width: 100%;
+  max-width: 250px;
+  max-height: 40px; }
 
 @media screen and (max-width: 768px) {
   .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
@@ -305,7 +311,10 @@ ul, li {
     padding: 10px 20px;
     max-width: 380px;
     margin-bottom: 15px;
-    border-style: none; } }
+    border-style: none; }
+  .cajaboton .boton2 {
+    width: 160px;
+    background-color: #d39d69; } }
 
 .cajadePrenda {
   max-width: 100%;

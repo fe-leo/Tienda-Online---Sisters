@@ -329,7 +329,7 @@ ul, li {
     text-align: center;
 }
 
-/*ESTILO Y TRANSICIÓN DE BOTÓN*/
+/*ESTILO Y TRANSICIÓN DE BOTÓN
 .boton1{
     margin-top: 10px;
     padding: 10px;
@@ -342,7 +342,7 @@ ul, li {
 }
 .boton1:hover{
     background: #ac764a;
-}
+}*/
 
 /*TRANSICIÓN DE INPUT*/
 input:focus{

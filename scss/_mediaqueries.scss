@@ -29,10 +29,16 @@
     width: 100%;
     max-width: 250px;
     max-height: 40px;
-   
+
+}
+.cajaboton .boton2{
+    width: 100%;
+    background-color: #d39b6d;
 }
 .cajaF .inputCart{
     width: 100%;
+    max-width: 250px;
+    max-height: 40px;
 }
 @media screen and (max-width:768px){
     .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
@@ -134,6 +140,7 @@
         margin-bottom: 15px;
         border-style: none;
     }
+    
     .cajaF .boton1{
         border-radius: 10px;
         padding: 10px 20px;
@@ -141,4 +148,9 @@
         margin-bottom: 15px;
         border-style: none;
     }
+    .cajaboton .boton2{
+        width: 160px;
+        background-color: #d39d69;
+    }
+    
 }

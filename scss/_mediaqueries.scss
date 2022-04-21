@@ -40,6 +40,13 @@
     max-width: 250px;
     max-height: 40px;
 }
+.cajadePrenda{
+    max-width: 100%;
+    padding:15px;
+}
+.prenda{
+    padding-bottom: 10px;
+}
 @media screen and (max-width:768px){
     .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
         display: flex;
@@ -152,5 +159,4 @@
         width: 160px;
         background-color: #d39d69;
     }
-    
 }

@@ -16,109 +16,176 @@
 
 <body>
     <div class="container-fluid">
-        <!--Contenedor Header de Descuento-->
+        <!--CONTENEDOR HEADER DE DESCUENTO-->
         <header class="headerOff">
             <div>
                 <p>10% OFF efectivo/transferencia - 3 cuotas sin interés / Envíos gratis a partir de $5800</p>
             </div>
         </header>
-    <!--IMAGEN DEL LOGO-->
-    <div class="logo">
-        <a href="../index.html"><img src="../paginas/multimedia/logosisters.jpg" alt="Sisters Logo"
-                title="Sisters Clothes"></a>
-    </div>
-    <!--NAV BAR-->
-    <div class="navegacion sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="lista container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="listas collapse navbar-collapse" id="navbarNavDropdown">
-                    <li><a class="navbar-brand" href="../paginas/productos.html">Productos</a></li>
-                    <li><a class="navbar-brand" href="../paginas/newin.html">New In</a></li>
-                    <li><a class="navbar-brand" href="../paginas/info.html">Info</a></li>
-                    <li><a class="navbar-brand" href="../paginas/contactanos.html">Contacto</a></li>
-                </div>
+        <!--IMAGEN DEL LOGO-->
+        <div class="logo">
+            <a href="../index.html"><img src="../paginas/multimedia/logosisters.jpg" alt="Sisters Logo"
+                    title="Sisters Clothes"></a>
+        </div>
+        <!--NAV BAR-->
+        <div class="navegacion sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="lista container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="listas collapse navbar-collapse" id="navbarNavDropdown">
+                        <li><a class="navbar-brand" href="../paginas/productos.html">Productos</a></li>
+                        <li><a class="navbar-brand" href="../paginas/newin.html">New In</a></li>
+                        <li><a class="navbar-brand" href="../paginas/info.html">Info</a></li>
+                        <li><a class="navbar-brand" href="../paginas/contactanos.html">Contacto</a></li>
+                    </div>
 
-            </div>
-        </nav>
-    </div>
-    <div class="cajadePrenda container-fluid">
-        <div class="carddd card mb-3">
-            <div class="row">
-                <div class="coluimg col-md-6 col-sm-12">
-                    <img src="multimedia/productos/camisamarron.jpg" class="prendaImg2 img-fluid rounded-start"
-                        alt="camisamarron">
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="card-body">
-                        <h1 class="card-title">Nombre de la prenda</h1>
-                        <p class="h4 precio">$2.300,00</p>
-                        <p class="cardTextito card-text"> 10% de descuento pagando por transferencia bancaria ó efectivo
-                        </p>
-                        <p class="card-text"></p>
-                        <ul class="formaPago">
-                            <li><a href="">Ver formas de pago</a>
-                            </li>
-                        </ul>
-                        <fieldset class="cajaF">
-                            <legend class="cantidadText">Cantidad</legend>
-                            <select class="inputCart form-select" aria-label="Default select example">
-                                <option selected>Elegir cantidad</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <button class="boton1" type="submit" value="AGREGAR AL CARRITO" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">AGREGAR AL CARRITO
-                            </button>
-                        </fieldset>
+            </nav>
+        </div>
+        <!--CONTENEDOR DE PRODUCTO-->
+        <main>
+            <div class="cajadePrenda container-fluid">
+                <div class="carddd card mb-3">
+                    <div class="row">
+                        <div class="coluimg col-md-6 col-sm-12">
+                            <img src="multimedia/productos/camisamarron.jpg" class="prendaImg2 img-fluid rounded-start"
+                                alt="Camisa Marrón">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card-body">
+                                <h1 class="card-title">Nombre de la prenda</h1>
+                                <p class="h4 precio">$2.300,00</p>
+                                <p class="cardTextito card-text"> 10% de descuento pagando por transferencia bancaria ó
+                                    efectivo
+                                </p>
+                                <p class="card-text"></p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="formaPago" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Ver formas de pago
+                                </button>
 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 id="offcanvasRightLabel">Mi Carrito</h5>
-                                <input type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close">
-                            </div>
-                            <div class="cajaCarrito offcanvas-body">
-                                <img src="multimedia/productos/camisamarron.jpg" class="img-thumbnail"
-                                    alt="Camisa Marrón">
-                                <p>Camisa Marrón</p>
-                                <p>Subtotal</p>
-                                <p>Agregar cupón de descuento</p>
-                                <p>Total</p>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Formas de Pago</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row pagos">
+                                                    <p class="pagoTexto">Tarjetas de Crédito</p>
+                                                    <div class="pago col">
+                                                        <div>
+                                                            <img src="multimedia/creditovisa.jpg" alt="Crédito Visa">
+                                                        </div>
+                                                        <div>
+                                                            <img src="multimedia/creditomastercard.jpg"
+                                                                alt="Crédito Mastercard">
+                                                        </div>
+                                                        <div>
+                                                            <img src="multimedia/creditosantander.png"
+                                                                alt="Crédito Santander">
+                                                        </div>
+                                                    </div>
+                                                    <p class="pagoTexto">Tarjetas de Débito</p>
+                                                    <div class="pago col">
+                                                        <div>
+                                                            <img src="multimedia/debitovisa.png" alt="Débito Visa">
+                                                        </div>
+                                                        <div>
+                                                            <img src="multimedia/debitomaestro.png"
+                                                                alt="Debito Maestro">
+                                                        </div>
+                                                        <div>
+                                                            <img src="multimedia/debitocabal.png" alt="Débito Cabal">
+                                                        </div>
+                                                    </div>
+                                                    <p class="pagoTexto">Efectivo/Transferencia</p>
+                                                    <div class="pago col">
+                                                        <div>
+                                                            <img src="multimedia/efectivopagofacil.png"
+                                                                alt="Pago Fácil">
+                                                        </div>
+                                                        <div>
+                                                            <img src="multimedia/efectivorapipago.png" alt="Rapipago">
+                                                        </div>
+                                                        <div>
+                                                            <img src="multimedia/transferenciabancaria.png"
+                                                                alt="Transferencia Bancaria">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <fieldset class="cajaF">
+                                    <legend class="cantidadText">Cantidad</legend>
+                                    <select class="inputCart form-select" aria-label="Default select example">
+                                        <option selected>Elegir cantidad</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <button class="boton1" type="submit" value="AGREGAR AL CARRITO"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">AGREGAR AL CARRITO
+                                    </button>
+                                </fieldset>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">Mi Carrito</h5>
+                                        <input type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close">
+                                    </div>
+                                    <div class="cajaCarrito offcanvas-body">
+                                        <img src="multimedia/productos/camisamarron.jpg" class="img-thumbnail"
+                                            alt="Camisa Marrón">
+                                        <p>Camisa Marrón</p>
+                                        <p>Subtotal</p>
+                                        <p>Agregar cupón de descuento</p>
+                                        <p>Total</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-    </div>
-<!--Footer-->
-<footer class="piePagina">
-    <p>¡Seguinos en nuestras redes!</p>
-    <ul>
-        <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok">
-                <ion-icon name="logo-instagram"></ion-icon>
-                Instagram
-            </a>
-        </li>
-        <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218">
-                <ion-icon name="logo-facebook"></ion-icon> Facebook
-            </a></li>
-    </ul>
-    <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
-</footer>
+</main>
 </div>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--FOOTER-->
+    <footer class="piePagina">
+        <p>¡Seguinos en nuestras redes!</p>
+        <ul>
+            <li class="socialMedia"><a href="https://www.instagram.com/sisters_clothesok">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    Instagram
+                </a>
+            </li>
+            <li class="socialMedia"><a href="https://www.facebook.com/sisters-103161348253218">
+                    <ion-icon name="logo-facebook"></ion-icon> Facebook
+                </a></li>
+        </ul>
+        <p class="copyright">COPYRIGHT SISTERS CLOTHES - 2022. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

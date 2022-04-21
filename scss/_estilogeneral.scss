@@ -18,6 +18,53 @@ img{
     padding: 0px;
 }
 .container-fluid{
+    max-width: 100%;
     margin: 0px;
     padding: 0px;
+}
+/*ESTILO DE TITULO DE PÁG "NEWIN"*/
+.tituloNew{
+    text-align: center;
+    padding: 15px;
+}
+/*ESTILO DE SECCIÓN INFO*/
+.info .envio{
+    font-weight: 700;
+    text-align: left;
+    margin: 20px;
+    padding-left: 10px;
+}
+.lorem{
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*ESILOS DE SECCIÓN PAGO*/
+.pagos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 100%;
+}
+.pago img{
+    padding: 10px;
+    max-width: 200px;
+    max-height: 150px;
+    justify-content: left;
+}
+.pagoTexto{
+    text-align: left;
+    font-weight: bolder;
+    padding: 20px;
+}
+.phototo{
+    width: 100%;
+}
+
+.formaPago{
+    display: flex;
+    justify-content: left;
+    border-style: none;
+    background-color: white;
 }

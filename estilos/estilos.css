@@ -50,8 +50,53 @@ img {
   padding: 0px; }
 
 .container-fluid {
+  max-width: 100%;
   margin: 0px;
   padding: 0px; }
+
+/*ESTILO DE TITULO DE PÁG "NEWIN"*/
+.tituloNew {
+  text-align: center;
+  padding: 15px; }
+
+/*ESTILO DE SECCIÓN INFO*/
+.info .envio {
+  font-weight: 700;
+  text-align: left;
+  margin: 20px;
+  padding-left: 10px; }
+
+.lorem {
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 10px; }
+
+/*ESILOS DE SECCIÓN PAGO*/
+.pagos {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  max-width: 100%; }
+
+.pago img {
+  padding: 10px;
+  max-width: 200px;
+  max-height: 150px;
+  justify-content: left; }
+
+.pagoTexto {
+  text-align: left;
+  font-weight: bolder;
+  padding: 20px; }
+
+.phototo {
+  width: 100%; }
+
+.formaPago {
+  display: flex;
+  justify-content: left;
+  border-style: none;
+  background-color: white; }
 
 /*ESTILO DEL HEADER DE DESCUENTO*/
 .headerOff p {
@@ -228,6 +273,13 @@ ul, li {
   max-width: 250px;
   max-height: 40px; }
 
+.cajadePrenda {
+  max-width: 100%;
+  padding: 15px; }
+
+.prenda {
+  padding-bottom: 10px; }
+
 @media screen and (max-width: 768px) {
   .container-fluid, .headerOff, .logo .lista, .intro, .piePagina {
     display: flex;
@@ -318,16 +370,17 @@ ul, li {
 
 .cajadePrenda {
   max-width: 100%;
-  padding: 10px;
-  background-color: white; }
+  padding: 15px;
+  background-color: white;
+  margin: 0px; }
 
 .prendaImg2 {
   max-width: 450px;
   max-height: 520px; }
 
 .carddd {
-  padding-left: auto;
-  padding-right: auto; }
+  border-style: none;
+  padding: 0px; }
 
 .cardTextito {
   text-align: left;
@@ -460,3 +513,22 @@ ul, li {
 .carr:hover {
   transform: scale(1.1);
   background-color: #f0d6bb; }
+
+/*ESTILO DE PAGE NAVIGATION Y HOVER*/
+.navpage {
+  margin: 0px;
+  width: 100%; }
+  .navpage .pagination {
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #cac6c1; }
+
+.pagination .page-item {
+  padding: 10px; }
+
+.page-item {
+  padding: 5px; }
+  .page-itemhover {
+    background-color: #d6b090;
+    border-radius: 2px; }

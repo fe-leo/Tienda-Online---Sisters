@@ -27,6 +27,7 @@ img{
     justify-content: center;
     text-align: center;
 }
+
 /*ESTILO DEL NAV BAR*/
 .lista{
     display: flex;
@@ -112,54 +113,6 @@ ul, li {
 }
 .intro p{
     padding-top: 10px;
-}
-/*ESTILO DE IMAGENES INTRO*/
-.roww{
-    display: grid; 
-    grid-auto-flow: column; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 0px 0px;
-    padding: 20px;
-  }
-  .photo1 { grid-area: 1 / 1 / 2 / 2; }
-  .photo2 { grid-area: 1 / 2 / 2 / 3; }
-  .photo3 { grid-area: 1 / 3 / 2 / 4; }
-
-/*CONTENEDOR DE PRENDAS*/
-.cajadePrenda{
-    padding: 50px 160px;
-    background-color: orange;
-}
-.prendaImg2{
-    max-width: 450px;
-    max-height: 520px;
-}
-.carddd{
-    background-color: violet;
-    padding-right: 10px;
-}
-.cardTextito{
-    text-align: left;
-    font-size: 16px;
-}
-.inputCart{
-    border-radius: 10px;
-    padding: 10px 20px;
-    width: 380px;
-    margin-bottom: 15px;
-    border-style: none;
-}
-.cajaCarrito p{
-    text-align: left;
-}
-.img-thumbnail{
-    display: flex;
-    justify-content: left;
-    border-style: none;
-    width: 100px;
-    height: 100px;
-    
 }
 /*ESTILO DE PRODUCTO*/
 .card-title{
@@ -343,45 +296,6 @@ input:focus{
     border-radius: 2px;
     padding: 5px;
     text-decoration: none;
-}
-
-/*GRID DE HTML*/
-.contenedor{
-    display: grid;
-    grid-template-columns: (4, 1fr);
-    grid-template-rows: (7, 1fr );
-    grid-template-areas:
-    "headerOff" "headerOff" "headerOff"
-    "logo" "logo" "logo"
-    "navegacion" "navegacion" "navegacion"
-    "intro" "intro" "intro"
-    "roww" "roww" "roww"
-    "small-container" "small-container" "small-container"
-    "piePagina" "piePagina" "piePagina"
-}
-
-.headerOff{
-    grid-area: headerOff;
-}
-
-.logo{
-    grid-area: logo;
-}
-.navegacion{
-    grid-area: navegacion;
-}
-.intro{
-    grid-area: intro;
-}
-
-.roww{
-    grid-area: roww;
-}
-.small-container{
-    grid-area: small-container;
-}
-.piePagina{
-    grid-area: piePagina;
 }
 /*RESPONSIVE*/
 
